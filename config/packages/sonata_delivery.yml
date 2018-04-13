@@ -1,0 +1,10 @@
+
+#sonata_delivery:
+#    services:
+#        free_address_required:
+#            name: Free
+#            enabled: true
+#            priority: 1
+#            code: free
+#
+#    selector: sonata.delivery.selector.default

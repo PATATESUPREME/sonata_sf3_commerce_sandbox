@@ -1,0 +1,7 @@
+# FOS Comment Bundle
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: Sonata\CommentBundle\Model\Comment
+            thread: Sonata\CommentBundle\Model\Thread

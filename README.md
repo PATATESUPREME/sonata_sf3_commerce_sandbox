@@ -26,8 +26,8 @@ php >= 7.1
 2. Build the project : `composer install` + Configure environment variables
 3. Configure the project :
     - Build the DB :
-            - `php bin/console doctrine:database:create`
-            - `php bin/console doctrine:schema:create`
+        - `php bin/console doctrine:database:create`
+        - `php bin/console doctrine:schema:create`
 
 Documentation
 -------------

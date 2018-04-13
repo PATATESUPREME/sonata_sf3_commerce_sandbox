@@ -1,0 +1,10 @@
+# Nelmio Api Doc Configuration
+nelmio_api_doc:
+    areas:
+        path_patterns: # an array of regexps
+            - ^/api(?!/doc$)
+    documentation:
+        info:
+            title: Sandbox API
+            description: This is the API displayer of the Sandbox.
+            version: 0.1.0

@@ -1,0 +1,10 @@
+# Sonata Translation Bundle
+# Configuration: https://sonata-project.org/bundles/translation/master/doc/reference/installation.html
+sonata_translation:
+    locales: '%locales%'
+    default_locale: '%locale%'
+    # here enable the types you need
+    gedmo:
+        enabled: true
+    knplabs:
+        enabled: true

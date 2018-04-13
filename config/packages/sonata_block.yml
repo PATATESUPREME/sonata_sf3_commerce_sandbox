@@ -1,0 +1,24 @@
+# Sonata Block Bundle
+# Configuration: https://sonata-project.org/bundles/block/master/doc/reference/installation.html
+sonata_block:
+    default_contexts: [sonata_page_bundle]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        sonata.admin.block.stats:
+            contexts:   [admin]
+        sonata.admin.block.search_result:
+            contexts:   [admin]
+
+        # Enable some default blocks
+        sonata.block.service.text:
+        sonata.block.service.rss:
+
+        # enable the SonataTimelineBundle block
+        sonata.timeline.block.timeline:
+
+        # Some specific block from the SonataMediaBundle
+        sonata.media.block.media:
+        sonata.media.block.gallery:
+        sonata.media.block.feature_media:

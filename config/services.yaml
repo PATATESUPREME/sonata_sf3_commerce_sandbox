@@ -1,6 +1,12 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    locale: 'en'
+    locales: [en, fr, it, nl, es]
+    mailer_user: '%env(MAILER_USER)%'
+    sonata_cache.symfony.domain: '%env(SONATA_CACHE_SYMFONY_DOMAIN)%'
+    sonata_cache.symfony.ip: '%env(SONATA_CACHE_SYMFONY_IP)%'
+    sonata_cache.symfony.port: 80
 
 services:
     # default configuration for services in *this* file

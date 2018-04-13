@@ -1,0 +1,15 @@
+# Sonata User Bundle
+# Configuration: https://sonata-project.org/bundles/user/4-x/doc/reference/advanced_configuration.html
+sonata_user:
+    manager_type: orm # can be orm or mongodb
+#    class:
+#        user: App\Application\Sonata\UserBundle\Entity\User
+#        group: App\Application\Sonata\UserBundle\Entity\Group
+
+#    profile:
+#        menu:
+#            - { route: 'sonata_user_profile_edit', label: 'link_edit_profile', domain: 'SonataUserBundle'}
+#            - { route: 'sonata_user_profile_edit_authentication', label: 'link_edit_authentication', domain: 'SonataUserBundle'}
+#            - { route: 'sonata_order_index', label: 'order_list', domain: 'SonataOrderBundle'}
+
+    security_acl: false
