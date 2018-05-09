@@ -7,6 +7,12 @@ parameters:
     sonata_cache.symfony.domain: '%env(SONATA_CACHE_SYMFONY_DOMAIN)%'
     sonata_cache.symfony.ip: '%env(SONATA_CACHE_SYMFONY_IP)%'
     sonata_cache.symfony.port: 80
+    sonata.customer.block.breadcrumb_address.class: App\Application\Sonata\CustomerBundle\Block\Breadcrumb\CustomerAddressBreadcrumbBlockService
+    sonata.order.block.breadcrumb_order.class: App\Application\Sonata\OrderBundle\Block\Breadcrumb\UserOrderBreadcrumbBlockService
+
+imports:
+    - { resource: "@ApplicationSonataCacheBundle/Resources/config/services.yml" }
+    - { resource: "@ApplicationSonataProductBundle/Resources/config/services.yml" }
 
 services:
     # default configuration for services in *this* file
@@ -31,3 +37,19 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    stof_doctrine_extensions.listener.translatable:
+        class: "%stof_doctrine_extensions.listener.translatable.class%"
+        public: true
+        calls:
+            - [setAnnotationReader, ['@annotation_reader']]
+            - [setDefaultLocale, ['%stof_doctrine_extensions.default_locale%']]
+            - [setTranslatableLocale, ['%stof_doctrine_extensions.default_locale%']]
+            - [setTranslationFallback, ['%stof_doctrine_extensions.translation_fallback%']]
+            - [setPersistDefaultLocaleTranslation, ['%stof_doctrine_extensions.persist_default_translation%']]
+            - [setSkipOnLoad, ['%stof_doctrine_extensions.skip_translation_on_load%']]
+
+    sonata.formatter.pool:
+        class: Sonata\FormatterBundle\Formatter\Pool
+        calls:
+            - [setLogger, ['@logger']]

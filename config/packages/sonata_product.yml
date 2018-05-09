@@ -1,0 +1,26 @@
+sonata_product:
+    products:
+#        # Prototype
+#        id:
+#            provider:             ~  # Required
+#            manager:              ~  # Required
+#            variations:
+#                fields:           [] # Required
+
+        sonata.product:
+            provider:       sonata.product.type
+            manager:        sonata.product.manager
+
+        sonata.product.bowl:
+            provider:       sonata.product.bowl.type
+            manager:        sonata.product.bowl.manager
+
+    class:
+        product:              App\Application\Sonata\ProductBundle\Entity\Product
+        package:              App\Application\Sonata\ProductBundle\Entity\Package
+        product_category:     App\Application\Sonata\ProductBundle\Entity\ProductCategory
+        product_collection:   App\Application\Sonata\ProductBundle\Entity\ProductCollection
+        category:             App\Application\Sonata\ClassificationBundle\Entity\Category
+        collection:           App\Application\Sonata\ClassificationBundle\Entity\Collection
+        delivery:             App\Application\Sonata\ProductBundle\Entity\Delivery
+        gallery:              App\Application\Sonata\MediaBundle\Entity\Gallery

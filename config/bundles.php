@@ -43,10 +43,14 @@ return [
     // Ivory
     Ivory\CKEditorBundle\IvoryCKEditorBundle::class => ['all' => true],
 
+    // Stof
+    Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
+
     // Sonata
     // Foundation
     Sonata\CoreBundle\SonataCoreBundle::class => ['all' => true],
     Sonata\NotificationBundle\SonataNotificationBundle::class => ['all' => true],
+//    Sonata\FormatterBundle\SonataFormatterBundle::class => ['all' => true],
     Sonata\IntlBundle\SonataIntlBundle::class => ['all' => true],
     Sonata\CacheBundle\SonataCacheBundle::class => ['all' => true],
     Sonata\SeoBundle\SonataSeoBundle::class => ['all' => true],
@@ -61,6 +65,13 @@ return [
     // E-Commerce
     Sonata\CommentBundle\SonataCommentBundle::class => ['all' => true],
     Sonata\BasketBundle\SonataBasketBundle::class => ['all' => true],
+    Sonata\CustomerBundle\SonataCustomerBundle::class => ['all' => true],
+    Sonata\DeliveryBundle\SonataDeliveryBundle::class => ['all' => true],
+    Sonata\InvoiceBundle\SonataInvoiceBundle::class => ['all' => true],
+    Sonata\OrderBundle\SonataOrderBundle::class => ['all' => true],
+    Sonata\PaymentBundle\SonataPaymentBundle::class => ['all' => true],
+    Sonata\PriceBundle\SonataPriceBundle::class => ['all' => true],
+    Sonata\ProductBundle\SonataProductBundle::class => ['all' => true],
 
     // Feature
     Sonata\BlockBundle\SonataBlockBundle::class => ['all' => true],
@@ -69,4 +80,18 @@ return [
     Sonata\TimelineBundle\SonataTimelineBundle::class => ['all' => true],
     Sonata\UserBundle\SonataUserBundle::class => ['all' => true],
 
+    // Application
+    App\Application\Sonata\BasketBundle\ApplicationSonataBasketBundle::class => ['all' => true],
+    App\Application\Sonata\CacheBundle\ApplicationSonataCacheBundle::class => ['all' => true],
+    App\Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle::class => ['all' => true],
+    App\Application\Sonata\CustomerBundle\ApplicationSonataCustomerBundle::class => ['all' => true],
+    App\Application\Sonata\DeliveryBundle\ApplicationSonataDeliveryBundle::class => ['all' => true],
+    App\Application\Sonata\InvoiceBundle\ApplicationSonataInvoiceBundle::class => ['all' => true],
+    App\Application\Sonata\MediaBundle\ApplicationSonataMediaBundle::class => ['all' => true],
+    App\Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle::class => ['all' => true],
+    App\Application\Sonata\OrderBundle\ApplicationSonataOrderBundle::class => ['all' => true],
+    App\Application\Sonata\PaymentBundle\ApplicationSonataPaymentBundle::class => ['all' => true],
+    App\Application\Sonata\ProductBundle\ApplicationSonataProductBundle::class => ['all' => true],
+    App\Application\Sonata\TimelineBundle\ApplicationSonataTimelineBundle::class => ['all' => true],
+    App\Application\Sonata\UserBundle\ApplicationSonataUserBundle::class => ['all' => true],
 ];

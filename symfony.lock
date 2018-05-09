@@ -1,4 +1,7 @@
 {
+    "behat/transliterator": {
+        "version": "v1.2.0"
+    },
     "cocur/slugify": {
         "version": "v3.1"
     },
@@ -89,6 +92,9 @@
     "friendsofsymfony/user-bundle": {
         "version": "v2.1.2"
     },
+    "gedmo/doctrine-extensions": {
+        "version": "v2.4.34"
+    },
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
@@ -155,7 +161,7 @@
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "master",
             "version": "3.0",
-            "ref": "f95712101a2316e607a95ec54629e791fd3ee875"
+            "ref": "9e11b09b3681b683efd33d270581fe7a281d7236"
         }
     },
     "paragonie/random_compat": {
@@ -301,6 +307,15 @@
     },
     "stephpy/timeline-bundle": {
         "version": "v2.5.0"
+    },
+    "stof/doctrine-extensions-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.2",
+            "ref": "6c1ceb662f8997085f739cd089bfbef67f245983"
+        }
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.0.2"

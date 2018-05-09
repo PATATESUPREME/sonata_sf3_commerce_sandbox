@@ -5,6 +5,12 @@ sonata_admin:
 
     dashboard:
         groups:
+            sonata.admin.group.commerce:
+                label:           'sonata_admin.group.commerce'
+                icon:            '<i class="fa fa-shopping-cart"></i>'
+                items:
+                    - sonata.product.admin.product
+
             sonata.admin.group.notification:
                 label:           'sonata_admin.group.notification'
                 icon:            '<i class="fa fa-bell"></i>'

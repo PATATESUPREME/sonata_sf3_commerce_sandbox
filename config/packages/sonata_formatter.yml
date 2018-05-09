@@ -1,0 +1,17 @@
+# Sonata Formatter Bundle Configuration
+# All the options are here: https://sonata-project.org/bundles/formatter/3-x/doc/reference/installation.html#configuration
+#sonata_formatter:
+#    default_formatter: text
+#    formatters:
+#
+#        richhtml:
+#            service: sonata.formatter.text.raw
+#            extensions:
+#                - sonata.formatter.twig.control_flow
+#                - sonata.formatter.twig.gist
+#                - sonata.media.formatter.twig
+#
+#    ckeditor:
+#        templates:
+#            browser: 'SonataFormatterBundle:Ckeditor:browser.html.twig'
+#            upload: 'SonataFormatterBundle:Ckeditor:upload.html.twig'

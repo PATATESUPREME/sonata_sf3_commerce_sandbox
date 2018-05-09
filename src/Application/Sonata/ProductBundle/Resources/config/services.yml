@@ -1,0 +1,32 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+        # this means you cannot fetch services directly from the container via $container->get()
+        # if you need to do this, you can override this setting on individual services
+        public: true
+
+    sonata.product.manager:
+        class: Sonata\ProductBundle\Entity\ProductManager
+        arguments:
+            - App\Application\Sonata\ProductBundle\Entity\Product
+            - '@doctrine'
+
+    sonata.product.type:
+        class: App\Application\Sonata\ProductBundle\Provider\BowlProductProvider
+        arguments:
+            - '@jms_serializer.serializer'
+
+    sonata.product.bowl.manager:
+        class: Sonata\ProductBundle\Entity\ProductManager
+        arguments:
+            - App\Application\Sonata\ProductBundle\Entity\Bowl
+            - '@doctrine'
+
+    sonata.product.bowl.type:
+        class: App\Application\Sonata\ProductBundle\Provider\BowlProductProvider
+        arguments:
+            - '@jms_serializer.serializer'

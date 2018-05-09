@@ -2,9 +2,9 @@
 # Configuration: https://sonata-project.org/bundles/user/4-x/doc/reference/advanced_configuration.html
 sonata_user:
     manager_type: orm # can be orm or mongodb
-#    class:
-#        user: App\Application\Sonata\UserBundle\Entity\User
-#        group: App\Application\Sonata\UserBundle\Entity\Group
+    class:
+        user: App\Application\Sonata\UserBundle\Entity\User
+        group: App\Application\Sonata\UserBundle\Entity\Group
 
 #    profile:
 #        menu:

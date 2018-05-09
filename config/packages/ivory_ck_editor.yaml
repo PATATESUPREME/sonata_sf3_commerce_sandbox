@@ -1,3 +1,6 @@
+# CKEditor Configuration
+# This section can be used to include the SonataMediaBundle with CKEDITOR
+# > https://sonata-project.org/bundles/media/master/doc/reference/extra.html#ckeditor-integration
 ivory_ck_editor:
     default_config: simple_toolbar
     configs:
