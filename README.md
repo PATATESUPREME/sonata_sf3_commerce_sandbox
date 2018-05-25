@@ -29,17 +29,6 @@ php >= 7.1
             - `php bin/console doctrine:database:create`
             - `php bin/console doctrine:schema:create`
 
-Guidelines Git
---------------
-
-### Commit messages
-
-For your commit messages, please follow the [Golden Rules 1 - Commit message](https://sites.google.com/emakina.fr/technopedia/golden-rules/1-commit-message)
-  
-### Pull requests
-
-For your pull requests, please follow the [Golden Rules 4 - Pull request](https://sites.google.com/emakina.fr/technopedia/golden-rules/4-pull-request)
-
 Documentation
 -------------
 
